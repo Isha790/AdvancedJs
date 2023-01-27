@@ -98,6 +98,15 @@ let obj2=JSON.parse(JSON.stringify(object));
 obj2.address.city="Newark";
 console.log(obj);
 
+//clone of object
+let object2 = {...object,country:"USA", favoriteSong:"Letsgo"};
+//Shallow copy
+console.log(object2)
+object2.address.city1 = "Mumbai";
+console.log(object)
+// Deep copy
+let object3 = JSON.parse(JSON.stringify(object));
+console.log(object3)
 
 
 
